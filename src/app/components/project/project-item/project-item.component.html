@@ -1,0 +1,10 @@
+<td>{{ project?.name }}</td>
+<td>{{ project?.cms }}</td>
+<td>{{ project?.frameworkJS }}</td>
+<td><a href="{{ project?.urlDesign }}" target="_blank">{{ project?.urlDesign }}</a></td>
+<td>{{ project?.backExpertise }}</td>
+<td>{{ project?.frontExpertise }}</td>
+<td class="project__actions">
+  <a class="btn" routerLink="/projects/{{ project?.id }}">View</a>
+  <button class="btn btn--danger" (click)="onDelete(project)" type="button">Delete</button>
+</td>

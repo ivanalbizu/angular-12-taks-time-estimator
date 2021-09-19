@@ -1,0 +1,13 @@
+.project {
+  display: grid;
+  grid-auto-flow: column;
+  gap: .6rem;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+  &__actions {
+    justify-self: end;
+    display: grid;
+    grid-auto-flow: column;
+    gap: .2rem;
+  }
+}

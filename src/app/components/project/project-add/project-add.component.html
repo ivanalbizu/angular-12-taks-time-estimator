@@ -1,0 +1,73 @@
+<h2 class="main__title">Create Project</h2>
+<div>
+  <form class="form" (ngSubmit)="onSubmitCreate(project)" *ngIf="!submitted">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        required
+        [(ngModel)]="project.name"
+        name="name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="cms">CMS</label>
+      <input
+        type="text"
+        id="cms"
+        required
+        [(ngModel)]="project.cms"
+        name="cms"
+      />
+    </div>
+    <div class="form-group">
+      <label for="frameworkJS">Framework</label>
+      <input
+        type="text"
+        id="frameworkJS"
+        required
+        [(ngModel)]="project.frameworkJS"
+        name="frameworkJS"
+      />
+    </div>
+    <div class="form-group">
+      <label for="urlDesign">URL Design</label>
+      <input
+        type="text"
+        id="urlDesign"
+        required
+        [(ngModel)]="project.urlDesign"
+        name="urlDesign"
+      />
+    </div>
+    <div class="form-group">
+      <label for="backExpertise">Back Expertise</label>
+      <input
+        type="text"
+        id="backExpertise"
+        required
+        [(ngModel)]="project.backExpertise"
+        name="backExpertise"
+      />
+    </div>
+    <div class="form-group">
+      <label for="frontExpertise">Front Expertise</label>
+      <input
+        type="text"
+        id="frontExpertise"
+        required
+        [(ngModel)]="project.frontExpertise"
+        name="frontExpertise"
+      />
+    </div>
+    <div class="form-group form-group--submit">
+      <button class="btn" type="submit">Create Project</button>
+    </div>
+  </form>
+
+  <div *ngIf="submitted">
+    <h4>Project was submitted successfully!</h4>
+    <button>Add</button>
+  </div>
+</div>

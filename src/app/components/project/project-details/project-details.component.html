@@ -1,0 +1,163 @@
+<div>
+  <div *ngIf="project.id">
+    <h2 class="main__title">Project</h2>
+    <form class="form" (ngSubmit)="updateProject(project)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" [(ngModel)]="project.name" />
+      </div>
+      <div class="form-group">
+        <label for="cms">CMS</label>
+        <input
+          type="text"
+          id="cms"
+          [(ngModel)]="project.cms"
+          name="cms"
+        />
+      </div>
+      <div class="form-group">
+        <label for="frameworkJS">Framework JS</label>
+        <input
+          type="text"
+          id="frameworkJS"
+          [(ngModel)]="project.frameworkJS"
+          name="frameworkJS"
+        />
+      </div>
+      <div class="form-group">
+        <label for="urlDesign">URL Design</label>
+        <input
+          type="text"
+          id="urlDesign"
+          [(ngModel)]="project.urlDesign"
+          name="urlDesign"
+        />
+      </div>
+      <div class="form-group">
+        <label for="backExpertise">Back Expertise</label>
+        <input
+          type="text"
+          id="backExpertise"
+          [(ngModel)]="project.backExpertise"
+          name="backExpertise"
+        />
+      </div>
+      <div class="form-group">
+        <label for="frontExpertise">Front Expertise</label>
+        <input
+          type="text"
+          id="frontExpertise"
+          [(ngModel)]="project.frontExpertise"
+          name="frontExpertise"
+        />
+      </div>
+      <div class="form-group form-group--submit">
+        <button class="btn btn--warning" type="submit">Update</button>
+        <button class="btn btn--danger" type="button" (click)="deleteProject(project)">
+          Delete
+        </button>
+      </div>
+    </form>
+    <div>
+      <h2>Tareas</h2>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Page</th>
+          <th width="40%">Description</th>
+          <th width="116px">Estimated time</th>
+          <th width="116px">Real time</th>
+          <th width="80px">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of project.tasks" class="editable">
+          <td>
+            <input type="text" data-field="name" (focusout)="updateTask($event, task)" value="{{ task.name }}">
+          </td>
+          <td data-field="page">
+            <input type="text" data-field="page" (focusout)="updateTask($event, task)" value="{{ task.page }}">
+          </td>
+          <td data-field="description">
+            <input type="text" data-field="description" (focusout)="updateTask($event, task)" value="{{ task.description }}">
+          </td>
+          <td data-field="estimatedTime">
+            <input type="number" data-field="estimatedTime" (focusout)="updateTask($event, task)" value="{{ task.estimatedTime }}">
+          </td>
+          <td data-field="realTime">
+            <input type="number" data-field="realTime" (focusout)="updateTask($event, task)" value="{{ task.realTime }}">
+          </td>
+          <td>
+            <app-task-item
+              [task]="task"
+              (onDeleteTask)="deleteTask(task)"
+            ></app-task-item>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="text"
+              id="taskName"
+              name="taskName"
+              [(ngModel)]="task.name"
+              placeholder="Name"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="taskPage"
+              name="taskPage"
+              [(ngModel)]="task.page"
+              placeholder="Associated Page"
+            />
+          </td>
+          <td>
+            <input
+              type="text"
+              id="taskDescription"
+              name="taskDescription"
+              [(ngModel)]="task.description"
+              placeholder="Description"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              min="1"
+              max="100"
+              id="taskEstimatedTime"
+              name="taskEstimatedTime"
+              [(ngModel)]="task.estimatedTime"
+              placeholder="Estimated Time (hours)"
+            />
+          </td>
+          <td>
+            <input
+              type="number"
+              min="1"
+              max="100"
+              id="taskRealime"
+              name="taskRealime"
+              [(ngModel)]="task.realTime"
+              placeholder="Real Time (hours)"
+            />
+          </td>
+          <td>
+            <button (click)="createTask(task)" class="btn" type="button">
+              Add
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="!project.id">
+    <h2 class="main__title">Project</h2>
+    <p>Does not exist this Project</p>
+  </div>
+</div>

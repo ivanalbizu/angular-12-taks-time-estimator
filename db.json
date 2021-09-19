@@ -1,0 +1,167 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "App Time estimator",
+      "cms": "Prestashop",
+      "frameworkJS": "jQuery",
+      "urlDesign": "https://ivanalbizu.eu",
+      "backExpertise": "junior",
+      "frontExpertise": "senior",
+      "tasks": [
+        {
+          "id": "_e2me2io63sk",
+          "name": "Header menú",
+          "page": "Global",
+          "description": "Build a menu with Mobile Hamburger",
+          "estimatedTime": "12",
+          "realTime": "12"
+        },
+        {
+          "id": "_uxoy8qf0lpl",
+          "name": "Main Banner",
+          "page": "Home",
+          "description": "Main Banner Hero type",
+          "estimatedTime": 5,
+          "realTime": 4
+        },
+        {
+          "id": "_uxoy8qf0lpl",
+          "name": "Slider productos",
+          "page": "Home",
+          "description": "Principal slider construido con SwiperJS",
+          "estimatedTime": 5,
+          "realTime": 5
+        },
+        {
+          "id": "_69m1b9ejrad",
+          "name": "Footer",
+          "page": "Global",
+          "description": "Bloque de 4 columnas de footer",
+          "estimatedTime": 7,
+          "realTime": 8
+        },
+        {
+          "id": "_mn1nr55m3h",
+          "name": "Footer Social",
+          "page": "Global",
+          "description": "Bloque de redes sociales",
+          "estimatedTime": 2,
+          "realTime": 3
+        },
+        {
+          "id": "_i4hif2syu1",
+          "name": "Newsleter",
+          "page": "Global",
+          "description": "Formulario de subscripción a newsletter",
+          "estimatedTime": 4,
+          "realTime": 4
+        },
+        {
+          "id": "_ilzfwzxvc58",
+          "name": "Instagram",
+          "page": "Home",
+          "description": "slider con las imágenes de la cuenta Instagram asociada",
+          "estimatedTime": 5,
+          "realTime": 6
+        },
+        {
+          "id": "_ocnedo2l08",
+          "name": "Modal",
+          "page": "Global",
+          "description": "Modal",
+          "estimatedTime": "10",
+          "realTime": 12
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Banana Split",
+      "cms": "Wordpress",
+      "frameworkJS": "Vanilla JS",
+      "urlDesign": "https://www.figma.com/",
+      "backExpertise": "mid",
+      "frontExpertise": "senior",
+      "tasks": [
+        {
+          "id": "1",
+          "name": "Header",
+          "description": "Build a menu with Mobile Hamburger",
+          "page": "Global",
+          "estimatedTime": "10",
+          "realTime": "10",
+          "null": ""
+        },
+        {
+          "id": "_gfinsm5g09t",
+          "name": "We are",
+          "page": "We are",
+          "description": "Images box + Text content",
+          "estimatedTime": 5,
+          "realTime": 4,
+          "null": ""
+        },
+        {
+          "id": "_tgpwnpttdx",
+          "name": "Contact form",
+          "page": "Contact",
+          "description": "Contact form with recaptcha",
+          "estimatedTime": "3",
+          "realTime": "3"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Angular Commerce",
+      "cms": "None",
+      "frameworkJS": "Angular",
+      "urlDesign": "https://ivanalbizu.eu",
+      "backExpertise": "junior",
+      "frontExpertise": "junior",
+      "tasks": [
+        {
+          "id": "1",
+          "name": "Header menú",
+          "description": "Build a menu with Mobile Hamburger"
+        },
+        {
+          "id": "2",
+          "name": "Instagram",
+          "description": "Carousel de imágenes"
+        }
+      ]
+    },
+    {
+      "name": "Micro Landing",
+      "cms": "None",
+      "frameworkJS": "None",
+      "urlDesign": "https://zeplin.io/",
+      "backExpertise": "None",
+      "frontExpertise": "senior",
+      "tasks": [],
+      "id": 4
+    },
+    {
+      "name": "Time Tracker",
+      "tasks": [],
+      "cms": "None",
+      "frameworkJS": "VueJS",
+      "urlDesign": "https://ivanalbizu.eu",
+      "backExpertise": "senior",
+      "frontExpertise": "junior",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "name": "Component Themes",
+      "tasks": [],
+      "cms": "None",
+      "frameworkJS": "LitElement",
+      "urlDesign": "https://ivanalbizu.eu",
+      "backExpertise": "None",
+      "frontExpertise": "Senior"
+    }
+  ]
+}

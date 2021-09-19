@@ -1,0 +1,22 @@
+<h2 class="main__title">Projects List</h2>
+<table class="table">
+  <thead>
+    <tr class="projects__row projects__row--head">
+      <th>Project name</th>
+      <th width="100px">CMS</th>
+      <th>JS framework</th>
+      <th>URL design</th>
+      <th>Back expertise</th>
+      <th>Front expertise</th>
+      <th width="130px">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      app-project-item
+      *ngFor="let project of projects"
+      [project]="project"
+      (onDeleteProject)="deleteProject(project)"
+    ></tr>
+  </tbody>
+</table>
